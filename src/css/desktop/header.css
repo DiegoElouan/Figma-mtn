@@ -1256,3 +1256,110 @@ header {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column !important;
+    gap: 16px !important;
+    height: auto !important;
+    align-items: flex-start !important;
+    padding: 8px 0 !important;
+  }
+  header .menu nav {
+    flex-direction: column !important;
+    gap: 8px !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+  header .menu .mainMenu ul {
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+    align-items: flex-start !important;
+  }
+  header .ContactBTN {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    margin-top: 8px !important;
+  }
+  .HomeHero {
+    flex-direction: column !important;
+    gap: 32px !important;
+    height: auto !important;
+    padding: 24px 0 !important;
+  }
+  .HomeHeroDetails1 img {
+    width: 90vw !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  .HomeHeroDetails2 {
+    margin-top: 0 !important;
+    gap: 16px !important;
+    align-items: flex-start !important;
+  }
+  .Headlinebody1 {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    max-width: 100% !important;
+  }
+  .headlinebody2 {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    max-width: 100% !important;
+  }
+  .homeherobutton {
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 24px !important;
+    width: 100% !important;
+  }
+  .Howwework {
+    flex-direction: column !important;
+    gap: 32px !important;
+    height: auto !important;
+    padding: 24px 0 !important;
+  }
+  .HowweworkHeading,
+  .HowweworkCards {
+    width: 100% !important;
+    margin-top: 0 !important;
+    gap: 12px !important;
+  }
+  .HowweworkHeading1 {
+    font-size: 1.3rem !important;
+    line-height: 2rem !important;
+    width: 100% !important;
+  }
+  .HowweworkHeading2 {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    width: 100% !important;
+  }
+  .HowweworkCards1,
+  .HowweworkCards2,
+  .HowweworkCards3,
+  .HowweworkCards4 {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 12px !important;
+  }
+  .ourwork {
+    flex-direction: column !important;
+    gap: 16px !important;
+    height: auto !important;
+    padding: 24px 0 !important;
+  }
+  .ourworkHeader1,
+  .ourworkHeader2 {
+    font-size: 1.2rem !important;
+    width: 100% !important;
+  }
+  .ourworkPics,
+  .ourwork1,
+  .ourwork2 {
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+}

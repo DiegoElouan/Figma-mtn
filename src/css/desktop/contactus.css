@@ -1,0 +1,420 @@
+:root {
+  --mainBgColor: #1c1e53;
+}
+
+header {
+  width: 100%;
+  height: 92px;
+  background-color: var(--mainBgColor);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 550px;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menu nav {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.mainMenu {
+  height: 100%;
+}
+
+.mainMenu ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.mainMenu ul li {
+  width: fit-content;
+}
+
+.mainMenu ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #bbbbcb;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  transition: color 500ms;
+}
+
+.mainMenu ul li a:hover,
+.mainMenu ul li a.active {
+  color: #fff;
+}
+
+.ContactBTN {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactBTN a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.ContactBTN button {
+  all: unset;
+  padding: 16px 48px;
+  box-sizing: border-box;
+  border: 2px solid #f4f6fc33;
+  border-radius: 41px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ContactBTN button:hover {
+  background: #fff;
+  color: var(--mainBgColor);
+}
+
+/* ریسپانسیو برای زیر 992 پیکسل */
+@media (max-width: 1200px) {
+  header {
+    gap: 120px;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+    padding: 16px 0;
+  }
+  .menu nav {
+    gap: 18px;
+  }
+  .mainMenu ul {
+    gap: 16px;
+  }
+  .ContactBTN button {
+    padding: 12px 24px;
+  }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff;
+    color: #232323;
+  }
+  
+  .contact-section {
+    padding: 64px 0 0 0;
+    background: #fff;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #232323;
+  }
+  
+  .contact-header p {
+    color: #6b6b6b;
+    font-size: 1.1rem;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    max-width: 1100px;
+    margin: 0 auto 48px auto;
+    background: #f8f9fc;
+    border-radius: 16px;
+    padding: 48px 56px 40px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .form-group {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-group.full-width {
+    flex: 1 1 100%;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #232323;
+  }
+  
+  input, textarea {
+    background: #fff;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 16px 14px;
+    font-size: 1rem;
+    color: #232323;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.2s;
+    resize: none;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #23235b;
+  }
+  
+  textarea {
+    min-height: 90px;
+    max-width: 100%;
+  }
+  
+  .btn-dark {
+    background: #292933;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 16px 48px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-start;
+  }
+  
+  .btn-dark:hover {
+    background: #181820;
+  }
+  
+  @media (max-width: 992px) {
+    .contact-form {
+      padding: 32px 12px 24px 12px;
+    }
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+    .btn-dark {
+      width: 100%;
+      align-self: stretch;
+    }
+  }
+  
+  /* ریسپانسیو موبایل */
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 18px 4px 12px 4px;
+    }
+    .contact-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .footer-section {
+    background: #1c1e53;
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  .footer-top {
+    padding: 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 56px 32px 0 32px;
+  }
+  
+  .footer-col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 320px;
+  }
+  
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .footer-logo span {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .footer-desc {
+    color: #fff;
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+    max-width: 400px;
+    opacity: 0.8;
+  }
+  
+  .footer-contact-box {
+    background: #fcd980;
+    color: #232323;
+    border-radius: 0;
+    display: flex;
+    gap: 48px;
+    padding: 28px 32px;
+    margin-top: 32px;
+    font-size: 1rem;
+    max-width: 480px;
+  }
+  
+  .footer-contact-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .footer-contact-info {
+    font-size: 1rem;
+    color: #232323;
+  }
+  
+  .footer-talk-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.2;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 24px;
+  }
+  
+  .footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    transition: color 0.2s, background 0.2s;
+    text-decoration: none;
+  }
+  
+  .footer-socials a:hover {
+    color: #1c1e53;
+    background: #fcd980;
+  }
+  
+  .footer-bottom {
+    background: #fff;
+    color: #232323;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  .footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-menu {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .footer-menu a {
+    color: #232323;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .footer-menu a:hover {
+    color: #1c1e53;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .footer-container, .footer-bottom-container {
+      flex-direction: column;
+      gap: 32px;
+      align-items: flex-start;
+      padding: 0 12px;
+    }
+    .footer-contact-box {
+      flex-direction: column;
+      gap: 12px;
+      padding: 18px 16px;
+      max-width: 100%;
+    }
+    .footer-col {
+      min-width: unset;
+    }
+    .footer-menu {
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+  }
